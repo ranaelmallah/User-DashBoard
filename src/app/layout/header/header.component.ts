@@ -10,7 +10,5 @@ export class HeaderComponent {
 
   constructor() { }
 
-  onSearch() {
-    // Handle search logic
-  }
+ 
 }

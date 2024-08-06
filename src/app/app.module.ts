@@ -15,15 +15,13 @@ import {MatBadgeModule} from '@angular/material/badge';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatInputModule} from '@angular/material/input';
-// import {CommonModule} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatListModule} from '@angular/material/list';
-
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-  
+
     AppComponent,
     HeaderComponent,
     UserListComponent,

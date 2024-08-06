@@ -39,24 +39,3 @@ mat-card:hover {
     display: inline;
     width: 80px;
 }
-
-
-/*
-  .card {
-    background-color: bisque;
-    }
-
-    div {
-      margin: 10px;
-      cursor: pointer;
-      transition: transform 0.2s;
-      background-color: aqua;
-      }
-
-      div:hover {
-        transform: scale(1.05);
-        }
-
-        .spacer {
-          flex: 1 1 auto;
-          } */

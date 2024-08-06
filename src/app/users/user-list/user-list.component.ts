@@ -4,7 +4,6 @@ import { Router } from '@angular/router';
 import {NgModel} from '@angular/forms';
 
 import { PageEvent } from '@angular/material/paginator';
-// import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-user-list',
@@ -51,5 +50,5 @@ export class UserListComponent implements OnInit {
   viewUser(id: number): void {
     this.router.navigate(['/user', id]);
   }
-  
+
 }
