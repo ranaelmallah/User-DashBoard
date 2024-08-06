@@ -1,0 +1,23 @@
+<mat-toolbar>
+    <span>User List</span>
+</mat-toolbar>
+<mat-form-field appearance="outline" class="search-field">
+    <mat-label>Search Users by ID</mat-label>
+    <input matInput [(ngModel)]="searchTerm" (input)="onSearch()">
+</mat-form-field>
+<div class="search-results" *ngIf="filteredUsers.length > 0">
+    <mat-list>
+        <mat-list-item *ngFor="let user of filteredUsers" (click)="viewUser(user.id)">
+            <mat-card><img [src]="user.avatar" width="30px" style="display: inline;">{{ user.first_name}} {{ user.last_name }} (ID: {{ user.id }}) </mat-card>
+        </mat-list-item>
+
+    </mat-list>
+</div>
+
+<mat-card *ngFor="let user of users" (click)="viewUser(user.id)">
+    <img mat-card-image [src]="user.avatar" alt="{{user.first_name}}" class="img-card">
+    <mat-card-header>
+        <mat-card-title>{{user.first_name}} {{user.last_name}}</mat-card-title>
+    </mat-card-header>
+</mat-card>
+<mat-paginator [length]="totalUsers" [pageSize]="usersPerPage" (page)="onPageChange($event)"></mat-paginator>

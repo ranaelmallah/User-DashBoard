@@ -1,0 +1,62 @@
+.user-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+mat-card {
+    width: 90%;
+    margin: 5px auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+mat-list {
+    /* height: 100px; */
+    padding: 20px;
+    width: 50%;
+    background-color: rgb(196, 232, 255);
+}
+
+mat-list mat-card {
+    padding: 70px;
+    padding-top: 70px;
+    background-color: rgb(230, 239, 244);
+}
+
+mat-card:hover {
+    transform: scale(1.02);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.img-card {
+    border-radius: 50%;
+    margin: 20px;
+    display: inline;
+    width: 80px;
+}
+
+
+/*
+  .card {
+    background-color: bisque;
+    }
+
+    div {
+      margin: 10px;
+      cursor: pointer;
+      transition: transform 0.2s;
+      background-color: aqua;
+      }
+
+      div:hover {
+        transform: scale(1.05);
+        }
+
+        .spacer {
+          flex: 1 1 auto;
+          } */

@@ -1,0 +1,9 @@
+mat-card {
+    margin: 20px;
+}
+
+button {
+    background-color: rgb(111, 153, 213);
+    border: none;
+    padding: 6px 30px;
+}
